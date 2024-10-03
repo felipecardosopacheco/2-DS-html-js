@@ -12,27 +12,30 @@
             document.write('<br>')
         }
 
+        function mostrar(texto){
+            document.write(texto)
+            pulalinha()
+        }
+
         let ano = 2024
         let minhaIdade = ano - 2008
-        const maeIdade = ano - 1982
-        const paiIdade = ano - 1980
+        const maeIdade = ano - 1996
+        const paiIdade = ano - 1978
 
-        document.write(`Oi meu nome é Cibelly e tenho ${minhaIdade} anos`)
-        pulalinha ()
-        document.write(`O nome da minha mãe é Sirlei e ela tem ${maeIdade} anos`)
-        pulalinha ()
-        document.write(`O nome do meu pai é Paulo e ele tem ${paiIdade} anos`)
-        pulalinha ()
+        mostrar(`Oi meu nome é Felipe e tenho ${minhaIdade} anos`)
+        mostrar(`O nome da minha mãe é Alessandra e ela tem ${maeIdade} anos`)
+       mostrar(`O nome do meu pai é Claudio e ele tem ${paiIdade} anos`)
+       pulalinha()
 
         let media = (minhaIdade + maeIdade + paiIdade)
-        document.write(`A média das idades da minha familia é: ${media} <br>`)
+      mostra(`A média das idades da minha familia é: ${media} `)
+      pulalinha()
+      ano = 2030
 
-        ano = 2030
-
-        document.write('Em 2030 minha familia terá: ' + '<br>')
-        document.write(`Eu terei ${ano - 2008} anos <br>`)
-        document.write(`Minha mãe terá ${ano - 1982} anos <br>`)
-        document.write(`Meu pai terá ${ano - 1980} anos <br>`)
+        mostrar('Em 2030 minha familia terá: ' + '')
+        mostrar(`Eu terei ${ano - 2008} anos `)
+        mostrar(`Minha mãe terá ${ano - 1996} anos `)
+        mostrar(`Meu pai terá ${ano - 1978} anos `)
     </script>
 </body>
 </html>
