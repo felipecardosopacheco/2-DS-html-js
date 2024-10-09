@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Programa II</title>
+    <title>Programa II</title>
 </head>
 <body>
     <script>
-         function pulalinha() {
+        function pulalinha() {
             document.write('<br>')
         }
 
@@ -16,12 +16,25 @@
             pulalinha()
         }
 
-        let pesoFelipe = 70
-        let alturaFelipe = 1.78
+        function calculaIMC (altura,peso){
+        return imc = peso/ (altura * altura)
+        }
 
-        let imcFelipe = pesoFelipe / (alturaFelipe * alturaFelipe)
-        mostrar(imcFelipe)
+        let pesoCibelly = 52
+        let alturaCibelly = 1.64
 
+    
+        let pesoClaudia = 68
+        let alturaClaudia = 1.68
+
+        let nome = prompt(`Qual é o seu nome?`)
+        let alturaImformada = prompt(`${nome} você poderia me informar a sua altura? (Use ponto e não vìrgula para informar)`)
+        let pesoInformado = prompt (`${nome} você poderia me informar o seu peso?`)
+
+        mostrar(`O IMC de ${nome} é: ${ calculaIMC(alturaImformada, pesoInformado)}`)
+
+
+        //mostrar (`O imc da Cibelly é: ${calculaIMC(1.70, 68)}`)
     </script>
     
 </body>
