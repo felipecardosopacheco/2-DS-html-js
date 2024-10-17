@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada 2</title>
+</head>
+<body>
+
+<script>
+function pulaLinha() {
+document.write('<br>')
+}
+
+function mostrar(texto){
+document.write(texto)
+pulaLinha()
+}
+
+let materia = prompt(`Qual disciplina você quer saber a média?`)
+
+let trimestres = prompt(`Quantos trimestres você ja fez de ${materia}`)
+
+let totalNotas = 0 
+
+for(let i = 1; i <= trimestres; i++){
+    let nota = prompt(`Qual a sua nota no ${i} º Trimestre? `)
+    totalNotas = totalNotas + nota
+}
+
+let media = totalNotas/trimestres
+
+mostrar (`Sua media até o momento é ${media}`)
+
+</script>
+</body>
+</html>
+</body>
+</html>
