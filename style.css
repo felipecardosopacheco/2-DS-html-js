@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-titulo:"Public Sans", sans-serif;
+    --fonte-texto: "Inconsolata", monospace;
+    --cor-3: #e7ecefff;
+    --cor-2: #274c77ff;
+    --cor-4: #6096baff;
+    --cor-1: #a3cef1ff;
+}
+
+body{
+    background-color: var(--cor-1);
+    font-family: var(--fonte-texto);
+}
+header{
+    background-color: var(--cor-3);
+    text-align: center;
+    padding: 2em;
+    color: var(--cor-2);
+}
+header h1{
+    font-family: var(--font-titulo);
+    font-size: 2.5 em;
+}
+.Projetos{
+    padding: 2em;
+    display: flex;
+}
